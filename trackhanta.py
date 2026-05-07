@@ -272,6 +272,32 @@ def _build_html() -> str:
       display: flex; justify-content: space-between; align-items: center;
       margin-bottom: 18px;
     }
+    .topbar-right {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .support-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 9px;
+      border: 1px solid #2f5c8f;
+      border-radius: 999px;
+      background: #0a223c;
+      color: #b7d8ff;
+      font-size: 11px;
+      line-height: 1.2;
+      max-width: 460px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .support-pill strong {
+      color: #e2f1ff;
+      font-weight: 700;
+    }
     .brand-logo {
       height: 62px;
       width: auto;
@@ -675,7 +701,13 @@ def _build_html() -> str:
   <div class="wrap">
     <div class="topbar">
       <img class="brand-logo" src="/assets/trackhanta-logo-white.png" alt="Track Hanta" />
-      <div class="live"><span class="dot"></span>Live aggregate surveillance</div>
+      <div class="topbar-right">
+        <div class="live"><span class="dot"></span>Live aggregate surveillance</div>
+        <div class="support-pill" title="SOL: 3pLheGVtmHLe5xDpVXWLLPmcKquNLTGMEmzTofxLmoCC">
+          <strong>Support:</strong>
+          SOL 3pLheGVtmHLe5xDpVXWLLPmcKquNLTGMEmzTofxLmoCC
+        </div>
+      </div>
     </div>
 
     <section class="live-market">
